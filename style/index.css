@@ -67,6 +67,17 @@ html {
 
 /* General styles */
 
+.hidden {
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(50%);
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+}
+
 h1 {
     font-size: 4rem;
 }
@@ -244,6 +255,45 @@ footer {
 
     header nav a {
         width: 100%;
+    }
+
+}
+
+@media (max-width: 360px) and (max-height: 640px) {
+
+    .hero {
+        padding-top: 5%;
+    }
+
+    .works-wrapper .project {
+        padding: 10%;
+        margin: 2% 0;
+    }
+
+}
+
+@media (max-width: 1366px) and (max-height: 768px) {
+
+    header {
+        background: #C14545;
+    }
+
+    header nav a {
+        background: rgb(131, 36, 36);
+        color: white;
+    }
+
+}
+
+@media (max-width: 1920px) and (max-height: 1080px) {
+
+    header {
+        background: rgb(235, 85, 85);
+    }
+
+    header nav a {
+        background: rgb(119, 37, 37);
+        color: white;
     }
 
 }
