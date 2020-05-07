@@ -227,6 +227,8 @@ footer {
     font-size: 1.6rem;
 }
 
+/* Media queries */
+
 @media (max-width: 800px) {
 
     .hero {
@@ -239,6 +241,10 @@ footer {
     .hero .hero-blurb {
         padding: 5% 0;
         text-align: center;
+    }
+
+    .works-wrapper .project {
+        width: 45%;;
     }
 }
 
