@@ -1,1 +1,216 @@
-/* Add CSS styling here */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+    vertical-align: baseline;
+    font-family: 'Lato', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: .5px;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+* {
+    box-sizing: border-box;
+    /* outline: 1px solid gray; */
+    text-decoration: none;
+}
+
+/* General styles */
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+.content-wrapper {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Header styles */
+
+header {
+    padding: 50px 0;
+    background: #F5E4C3;
+}
+
+header nav {
+    margin-top: 20px;
+}
+
+header nav ul {
+    display: flex;
+}
+
+header nav a {
+    display: inline-block;
+    padding: 15px 30px;
+    background: #f1daad;
+    color: black;
+}
+
+header nav a:hover {
+    background: #C14545;
+    color: white;
+}
+
+/* Hero section styles */
+
+.hero-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-content: center;
+    height: 50vh;
+}
+
+.hero {
+    background: #FAF4D0;
+}
+
+.hero .hero-img {
+    width: 50%;
+}
+
+.hero .hero-img img {
+    height: 400px;
+    border-radius: 8px;
+}
+
+.hero .hero-blurb {
+    width: 50%;
+}
+
+.hero .hero-blurb button {
+    padding: 15px 30px;
+    background: #C14545;
+    border: none;
+    color: #F4FFFD;
+    font-size: 1rem;
+    border-radius: 50px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.hero .hero-blurb p {
+    line-height: 1.5;
+    margin-top: 30px;
+    font-size: 1.3rem;
+}
+
+/* Works section styles */
+
+.works-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    padding: 50px 0;
+    height: 65vh;
+}
+
+.works-wrapper .project {
+    display: flex;
+    flex-wrap: wrap;
+    width: 300px;
+    padding: 20px;
+}
+
+.works-wrapper .project:hover {
+    cursor: pointer;
+    background: linear-gradient(rgba(193,69,69,.2),#fff);
+    border-radius: 8px;
+}
+
+.works-wrapper .project:hover a {
+    color: #C14545;
+}
+
+.works-wrapper .project img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.works-wrapper .project a {
+    width: 100%;
+    text-align: center;
+    margin: 20px 0 0 0;
+    font-size: 1.2rem;
+    color: black;
+}
+
+/* Footer section styles */
+
+footer {
+    background: #F5E4C3;
+    padding: 50px 0;
+}
+
+.footer-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-wrapper button {
+    background: white;
+    padding: 15px 30px;
+    margin-top: 25px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 1rem;
+}
